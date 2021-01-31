@@ -1,4 +1,4 @@
-let commands = [1, 4, 1, 3, 2, 3, 0];
+let commands = [1, 4, 1, 3, 2, 3, 2, 4, 1, 0];
 let testCommands = [1, 0, 2, 4];
 
 //----- boards size
@@ -84,7 +84,7 @@ function runCommands(arr) {
       direction = 0;
       console.log("case 8", "x", x, "y", y, "direction", direction);
     } else if (arr[i] === 0) {
-      console.log([-1, -1]);
+      console.log(x, y);
     }
   }
 }
