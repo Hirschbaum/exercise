@@ -4,7 +4,8 @@ The task is to accept a set of commands and then simulate whether an object can 
 
 The table can be seen as a matrix where the object will have an x and y position as drawn below.
 
-![The box with the poistion __2, 2__ represents the starting position on a 4 x 4 table](/exercise-table.png)
+![The box with the poistion 2, 2 represents the starting position on a 4 x 4 table](/exercise-table.png)
+The box with the poistion _2, 2_ represents the starting position on a 4 x 4 table
 
 The object always occupies exactly one cell and can be seen as a point without mass. **Origo is at top left.**
 
@@ -22,15 +23,15 @@ Output:
 
 ## Commands to the simulation
 
-The object always has a direction (north, east, south or west). A simulation always starts with direction north. North means if the object sits on [2,4] and moves forward one step, the object will now stand on [2,3].
+The object always has a direction (north, east, south or west). A simulation always starts with direction north. North means if the object sits on [2, 4] and moves forward one step, the object will now stand on [2,3].
 
 The commands are:
 
-0 = quit simulation and print result
-1 = move forward one step
-2 = move backwards one step
-3 = rotate clockwise 90 degrees (eg north to east)
-4 = rotate counterclockwise 90 degress (eg west to south)
+- 0 = quit simulation and print result
+- 1 = move forward one step
+- 2 = move backwards one step
+- 3 = rotate clockwise 90 degrees (eg north to east)
+- 4 = rotate counterclockwise 90 degress (eg west to south)
 
 ## Example
 
@@ -38,12 +39,13 @@ If the program gets _4, 4, 2, 2_ as input, the table is initated to sixe 4 x 4 w
 
 ## Runing the program
 
-Inputs in script.js:
+Input variables in script.js:
 
-- **commands**: is an array for all the commands
+- **commands**: is an array with all the commands
 - **boardWidth** and **boardHeight**: inputs for the table's dimensions
 - **x** and **y**: coordinates for the starting position on the table
 
 To run the program in the browser:
 
 The function **runCommands** takes the array **commands** as an argument and executes the simulation.
+The result can be read in the browser console. (To open the console press Ctrl + Shift + i).

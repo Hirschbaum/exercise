@@ -1,5 +1,4 @@
 let commands = [1, 4, 1, 3, 2, 3, 2, 4, 1, 0];
-let testCommands = [1, 0, 2, 4];
 
 //----- boards size
 const boardWidth = 4;
@@ -36,53 +35,45 @@ function runCommands(arr) {
       (direction === 180 && arr[i] === 2)
     ) {
       y--;
-      console.log("case 1", y, "direction:", direction);
       checkBoard(boardWidth, boardHeight, x, y);
     } else if (
       (direction === 0 && arr[i] === 2) ||
       (direction === 180 && arr[i] === 1)
     ) {
       y++;
-      console.log("case 2", y, "direction:", direction);
       checkBoard(boardWidth, boardHeight, x, y);
     } else if (
       (direction === 0 && arr[i] === 3) ||
       (direction === 180 && arr[i] === 4)
     ) {
       direction = 90;
-      console.log("case 3", direction, "x", x, "y", y);
     } else if (
       (direction === 0 && arr[i] === 4) ||
       (direction === 180 && arr[i] === 3)
     ) {
       direction = 270;
-      console.log("case 4", direction, "x", x, "y", y);
     } else if (
       (direction === 90 && arr[i] === 1) ||
       (direction === 270 && arr[i] === 2)
     ) {
       x++;
-      console.log("case 5", "x", x, "y", y, "direction", direction);
       checkBoard(boardWidth, boardHeight, x, y);
     } else if (
       (direction === 90 && arr[i] === 2) ||
       (direction === 270 && arr[i] === 1)
     ) {
       x--;
-      console.log("case 6", "x", x, "y", y, "direction", direction);
       checkBoard(boardWidth, boardHeight, x, y);
     } else if (
       (direction === 90 && arr[i] === 3) ||
       (direction === 270 && arr[i] === 4)
     ) {
       direction = 180;
-      console.log("case 7", "x", x, "y", y, "direction", direction);
     } else if (
       (direction === 90 && arr[i] === 4) ||
       (direction === 270 && arr[i] === 3)
     ) {
       direction = 0;
-      console.log("case 8", "x", x, "y", y, "direction", direction);
     } else if (arr[i] === 0) {
       console.log(x, y);
     }
