@@ -38,6 +38,12 @@ The commands are:
 
 If the program gets _4, 4, 2, 2_ as input, the table is initated to sixe 4 x 4 with the object in position [2, 2] with direction north. Then, commands _1, 4, 1, 3, 2, 3, 2, 4, 1, 0_ are read fron input and executed. The final output would then be the end position of the object, in this case _[0, 1]_.
 
+## Cases
+
+Where DIR. stands for direction, COM. stands for command and ACTION discribes what to do.
+
+!(/cases.png)
+
 ## Runing the program
 
 Input variables in script.js:
