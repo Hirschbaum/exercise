@@ -42,7 +42,7 @@ If the program gets _4, 4, 2, 2_ as input, the table is initated to sixe 4 x 4 w
 
 Where DIR. stands for direction, COM. stands for command and ACTION discribes what to do.
 
-!(/cases.png)
+![cases](/cases.png)
 
 ## Runing the program
 
